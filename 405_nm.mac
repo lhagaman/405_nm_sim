@@ -1,6 +1,6 @@
 #set the detector parameters
 /rat/db/set DETECTOR experiment "405_nm"
-/rat/db/set DETECTOR geo_file "405_nm_sim/405_nm_sim.geo"
+/rat/db/set DETECTOR geo_file "405_nm/405_nm.geo"
 
 /run/initialize
 
