@@ -12,11 +12,20 @@ tube_caps_included = True
 laser_included = True
 table_included = True
 post_included = True
+center_included = True
+
+sample_surface_centered = True
+
+collecting_surfaces_included = True
+num_collecting_surfaces = 180
+collecting_surface_distance = 5.5
+collecting_surface_thickness = 0.01
+collecting_surface_height = 0.5
 
 # 'air', 'water', 'mineraloil'
 substance = "air"
 # incident angle of beam with respect to sample in degrees
-theta_i = 45
+theta_i = 60
 
 tube_radius = 1
 tube_wall_width = 0.125
@@ -57,20 +66,40 @@ if tube_included:
 if sample_included:
     sample = GS.tubeVolume('sample', sample_radius, sample_thickness)
     sample.colorVect = [0.976892196027, 0.408361008099, 0.504698048762, 0.8]
-    sample.center = {'x': 0, 'y': 0, 'z': 0}
-    # TODO: adjust center depending on theta_i angle so surface is always at (0,0,0).
+    if not sample_surface_centered:
+        sample.center = {'x': 0, 'y': 0, 'z': 0}
+    else:
+        sample.center = {'x': sample_thickness / 2 * math.cos(theta_i * math.pi / 180), 'y': sample_thickness / 2 * math.sin(theta_i * math.pi / 180), 'z': 0}
     sample.rotation = [90, 90 + theta_i, 0]
-    sample.mother = 'world'
-    sample.material = 'teflon'
+    sample.material = 'ptfe'
     masterString = sample.writeToString(masterString)
+
+if center_included:
+    center = GS.tubeVolume('center', 0.02, 4)
+    center.center = {'x': 0, 'y': 0, 'z': 0}
+    center.material = 'air'
+    center.colorVect = [1, 1, 1, 1]
+    masterString = center.writeToString(masterString)
+
+if collecting_surfaces_included:
+    for i in range(num_collecting_surfaces):
+        phi_start = 180.0 / num_collecting_surfaces * i + 180
+        phi_delta = 180.0 / num_collecting_surfaces
+        current_collecting_surface = GS.tubeVolume('collecting_surface_' + str(i),
+                                                   collecting_surface_distance + collecting_surface_thickness,
+                                                   collecting_surface_height, collecting_surface_distance, phi_start,
+                                                   phi_delta)
+        current_collecting_surface.material = 'air'
+        current_collecting_surface.center = {'x': 0, 'y': 0, 'z': 0}
+        if i == 0:
+            current_collecting_surface.colorVect = [1,1,1,1]
+        masterString = current_collecting_surface.writeToString(masterString)
 
 if tube_caps_included:
     upper_tube_cap = GS.tubeVolume('upper_tube_cap', tube_cap_radius, upper_tube_cap_height)
     lower_tube_cap = GS.tubeVolume('lower_tube_cap', tube_cap_radius, lower_tube_cap_height)
     upper_tube_cap.center = {'x': 0, 'y': 0, 'z': (tube_height + upper_tube_cap_height) / 2}
     lower_tube_cap.center = {'x': 0, 'y': 0, 'z': -(tube_height + lower_tube_cap_height) / 2}
-    upper_tube_cap.mother = 'world'
-    lower_tube_cap.mother = 'world'
     upper_tube_cap.material = 'aluminum'
     lower_tube_cap.material = 'aluminum'
     upper_tube_cap.colorVect = [0.2, 0.8, 0.6, 0.2]
@@ -83,7 +112,7 @@ if laser_included:
     laser.center = {'x': -(laser_length / 2. + dist_from_laser_to_sample), 'y': 0, 'z': 0}
     laser.rotation = [0, 90, 0]
     laser.mother = 'world'
-    laser.material = 'black_acrylic'
+    laser.material = 'stainless_steel'
     laser.colorVect = [0.5, 0.5, 0, 0.5]
     masterString = laser.writeToString(masterString)
 

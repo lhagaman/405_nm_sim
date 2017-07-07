@@ -45,9 +45,9 @@ class boxVolume(geoVolume):
 
         return OutputString
 
-
+# I modified this to include phi_start and phi_delta
 class tubeVolume(geoVolume):
-    def __init__(self,name,rMax,height,rMin=0):
+    def __init__(self,name,rMax,height,rMin=0, phi_start=0.0, phi_delta=360.0):
         geoVolume.__init__(self)
         self.name = name
         self.rMax = rMax
@@ -56,6 +56,8 @@ class tubeVolume(geoVolume):
         self.volType = 'tube'
         self.invisible = 0
         self.rotation = [0.0,0.0,0.0]
+        self.phi_start = phi_start
+        self.phi_delta = phi_delta
 
     def writeToString(self,OutputString):
         OutputString += '\n{\nname: "GEO",\nindex: "'+self.name+'",\nvalid_begin: [0,0],\nvalid_end: [0,0],\n'
@@ -64,6 +66,8 @@ class tubeVolume(geoVolume):
         OutputString += 'r_max: '+str(inTomm(float(self.rMax)))+',\n'
         OutputString += 'r_min: '+str(inTomm(float(self.rMin)))+',\n'
         OutputString += 'size_z: '+str(inTomm(float(self.height))/2.0)+',\n'
+        OutputString += 'phi_start: '+str(self.phi_start)+',\n'
+        OutputString += 'phi_delta: '+str(self.phi_delta)+',\n'
         OutputString += 'position: ['+str(inTomm(float(self.center['x'])))+','+str(inTomm(float(self.center['y'])))+','+str(inTomm(float(self.center['z'])))+'],\n'
         OutputString += 'rotation: ['+str(float(self.rotation[0]))+','+str(float(self.rotation[1]))+','+str(float(self.rotation[2]))+'],\n'
         OutputString += 'material: "'+self.material+'",\n'
