@@ -7,16 +7,16 @@ from mpl_toolkits.mplot3d import Axes3D
 geoFileName = './405_nm.geo'
 
 sample_included = True
-tube_included = True
-tube_caps_included = True
-laser_included = True
-table_included = True
-post_included = True
-center_included = True
+tube_included = False
+tube_caps_included = False
+laser_included = False
+table_included = False
+post_included = False
+center_included = False
 
 sample_surface_centered = True
 
-collecting_surfaces_included = True
+collecting_surfaces_included = False
 num_collecting_surfaces = 180
 collecting_surface_distance = 5.5
 collecting_surface_thickness = 0.01
@@ -71,7 +71,7 @@ if sample_included:
     else:
         sample.center = {'x': sample_thickness / 2 * math.cos(theta_i * math.pi / 180), 'y': sample_thickness / 2 * math.sin(theta_i * math.pi / 180), 'z': 0}
     sample.rotation = [90, 90 + theta_i, 0]
-    sample.material = 'ptfe'
+    sample.material = 'stainless_steel'
     masterString = sample.writeToString(masterString)
 
 if center_included:

@@ -1,0 +1,498 @@
+RAT, version 20294a0
+Status messages enabled: info detail 
+Hostname: lee-MacBookPro PID: 3420
+Seeding random number generator: 1412974528
+DB: Loading /home/lee/Desktop/RAT/rat-pac/data/BNL_WLS_MODEL.ratdb ... Success!
+DB: Loading /home/lee/Desktop/RAT/rat-pac/data/DAQ.ratdb ... Success!
+DB: Loading /home/lee/Desktop/RAT/rat-pac/data/DETECTOR.ratdb ... Success!
+DB: Loading /home/lee/Desktop/RAT/rat-pac/data/ELEMENTS.ratdb ... Success!
+DB: Loading /home/lee/Desktop/RAT/rat-pac/data/IBD.ratdb ... Success!
+DB: Loading /home/lee/Desktop/RAT/rat-pac/data/IO.ratdb ... Success!
+DB: Loading /home/lee/Desktop/RAT/rat-pac/data/MATERIALS.ratdb ... Success!
+DB: Loading /home/lee/Desktop/RAT/rat-pac/data/MC.ratdb ... Success!
+DB: Loading /home/lee/Desktop/RAT/rat-pac/data/NOISE.ratdb ... Success!
+DB: Loading /home/lee/Desktop/RAT/rat-pac/data/NTUPLE.ratdb ... Success!
+DB: Loading /home/lee/Desktop/RAT/rat-pac/data/OPTICS.ratdb ... Success!
+DB: Loading /home/lee/Desktop/RAT/rat-pac/data/PMT.ratdb ... Success!
+DB: Loading /home/lee/Desktop/RAT/rat-pac/data/PMTCHARGE.ratdb ... Success!
+DB: Loading /home/lee/Desktop/RAT/rat-pac/data/PMTTRANSIT.ratdb ... Success!
+DB: Loading /home/lee/Desktop/RAT/rat-pac/data/RUN.ratdb ... Success!
+DB: Loading /home/lee/Desktop/RAT/rat-pac/data/SPECTRUM.ratdb ... Success!
+DB: Loading /home/lee/Desktop/RAT/rat-pac/data/WIMP.ratdb ... Success!
+
+*************************************************************
+ Geant4 version Name: geant4-10-01-patch-02    (19-June-2015)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+<<< Geant4 Physics List simulation engine: Shielding 2.1
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  OpenGLImmediateX (OGLIX)
+  OpenGLImmediateXm (OGLIXm)
+  OpenGLStoredX (OGLSX)
+  OpenGLStoredXm (OGLSXm)
+  RayTracer (RayTracer)
+  RayTracerX (RayTracerX)
+  VRML1FILE (VRML1FILE)
+  VRML2FILE (VRML2FILE)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+DB: Setting DETECTOR[] experiment to 405_nm
+DB: Setting DETECTOR[] geo_file to 405_nm/405_nm.geo
+Loading experiment-specific RATDB files for: 405_nm
+Loading detector geometry from 405_nm/405_nm.geo
+Constructing detector materials...
+Loaded material: [AR_coating]
+Loaded material: [MgF2]
+Loaded material: [NaI]
+Loaded material: [Prelude]
+Loaded material: [SNOnorite]
+Loaded material: [TiO2]
+Loaded material: [ZnO2]
+Loaded material: [acrylic_SpartechSheet]
+Loaded material: [acrylic_black]
+Loaded material: [acrylic_polycast]
+Loaded material: [acrylic_rpt]
+Loaded material: [acrylic_suvt]
+Loaded material: [acrylic_uva_McMaster]
+Loaded material: [acrylic_uvt]
+Loaded material: [acrylic_uvt_RPT]
+Loaded material: [acrylic_uvt_good]
+Loaded material: [acrylic_white]
+Loaded material: [air]
+Loaded material: [aluminum]
+Loaded material: [borosilicate_glass]
+Loaded material: [cardboard]
+Loaded material: [concrete]
+Loaded material: [concrete_chess]
+Loaded material: [concrete_kaplan]
+Loaded material: [concrete_mcnp]
+Loaded material: [copper]
+Loaded material: [cryostat_vacuum]
+Loaded material: [dead_liquid_Ar]
+Loaded material: [dead_liquid_He]
+Loaded material: [dead_liquid_Ne]
+Loaded material: [dead_liquid_Xe]
+Loaded material: [delrin]
+Loaded material: [dodecane]
+Loaded material: [finemet]
+Loaded material: [gd_scintillator]
+G4Material::GetMaterial() WARNING: The material: mineral_oil does not exist in the table. Return NULL pointer.
+[gd_scintillator] thrown on construction queue
+Loaded material: [glass]
+Loaded material: [hamamatsu_borosilicate_glass]
+Loaded material: [kevlar]
+Loaded material: [lead]
+Loaded material: [liquid_Ar]
+Loaded material: [liquid_He]
+Loaded material: [liquid_Ne]
+Loaded material: [liquid_Xe]
+Loaded material: [mineral_oil]
+Loaded material: [mirror]
+Loaded material: [nylon]
+Loaded material: [optical_grease]
+Loaded material: [pen]
+Loaded material: [pet]
+Loaded material: [photocathode]
+Loaded material: [photocathode_R11065]
+Loaded material: [photocathode_R11780]
+Loaded material: [photocathode_R1408]
+Loaded material: [photocathode_R5912_HQE]
+Loaded material: [photocathode_R7081_hqe]
+Loaded material: [photocathode_et9390b]
+Loaded material: [pmt_vacuum]
+Loaded material: [polypropylene]
+Loaded material: [polystyrene_foam]
+Loaded material: [ppo]
+Loaded material: [pseudocumene]
+Loaded material: [ptfe]
+Loaded material: [ptfe_fabric]
+Loaded material: [pvc]
+Loaded material: [quartz]
+Loaded material: [rock]
+Loaded material: [salt_water]
+Loaded material: [sapphire]
+Loaded material: [scintillator]
+Loaded material: [stainless_steel]
+Loaded material: [stainless_steel_316L]
+Loaded material: [steel]
+Loaded material: [styrofoam]
+Loaded material: [tungsten]
+Loaded material: [tungsten_alloy]
+Loaded material: [tyvek]
+Loaded material: [vikuiti_esr]
+Loaded material: [water]
+queue (pass1): [gd_scintillator]
+[gd_scintillator] found and removed from construction queue
+Loading optics: AR_coating
+Loading optics: MgF2
+Loading optics: TiO2
+Loading optics: ZnO2
+Loading optics: acrylic_SpartechSheet
+Loading optics: acrylic_black
+Loading optics: acrylic_polycast
+Loading optics: acrylic_rpt
+Loading optics: acrylic_suvt
+Loading optics: acrylic_uva_McMaster
+Loading optics: acrylic_uvt
+Loading optics: acrylic_uvt_RPT
+Loading optics: acrylic_uvt_good
+Loading optics: acrylic_white
+Loading optics: air
+Loading optics: aluminum
+Loading optics: copper
+Loading optics: cryostat_vacuum
+Loading optics: gd_scintillator
+Loading optics: glass
+Loading optics: mineral_oil
+Loading optics: mirror
+Loading optics: nylon
+Loading optics: optical_grease
+Loading optics: photocathode
+Loading optics: photocathode_R11065
+Loading optics: photocathode_R11780
+Loading optics: photocathode_R1408
+Loading optics: photocathode_et9390b
+Loading optics: pmt_vacuum
+Loading optics: pseudocumene
+Loading optics: ptfe
+Loading optics: ptfe_fabric
+Loading optics: quartz
+Loading optics: salt_water
+Loading optics: sapphire
+Loading optics: scintillator
+Loading optics: stainless_steel
+Loading optics: stainless_steel_316L
+Loading optics: styrofoam
+Loading optics: tyvek
+Loading optics: water
+Registering box
+Registering tube
+Registering torus
+Registering sphere
+Registering reflector
+Registering reflector_waveguide
+Registering pmtarray
+Registering pmtcoverage
+Registering waterboxarray
+Registering bubble
+Registering ptube
+Registering psphere
+Registering revarray
+Registering tubearray
+Registering revolve
+Registering revolveChimney
+Registering lens
+Registering polygon
+Registering border
+Registering convexlens
+Registering tubeinter
+Registering perfbox
+Registering cut_tube
+Registering watchmanshield
+GeoSolidFactory: Constructing volume world
+GeoSolidFactory: Constructing volume collecting_surface_0
+GeoSolidFactory: Constructing volume collecting_surface_1
+GeoSolidFactory: Constructing volume collecting_surface_10
+GeoSolidFactory: Constructing volume collecting_surface_100
+GeoSolidFactory: Constructing volume collecting_surface_101
+GeoSolidFactory: Constructing volume collecting_surface_102
+GeoSolidFactory: Constructing volume collecting_surface_103
+GeoSolidFactory: Constructing volume collecting_surface_104
+GeoSolidFactory: Constructing volume collecting_surface_105
+GeoSolidFactory: Constructing volume collecting_surface_106
+GeoSolidFactory: Constructing volume collecting_surface_107
+GeoSolidFactory: Constructing volume collecting_surface_108
+GeoSolidFactory: Constructing volume collecting_surface_109
+GeoSolidFactory: Constructing volume collecting_surface_11
+GeoSolidFactory: Constructing volume collecting_surface_110
+GeoSolidFactory: Constructing volume collecting_surface_111
+GeoSolidFactory: Constructing volume collecting_surface_112
+GeoSolidFactory: Constructing volume collecting_surface_113
+GeoSolidFactory: Constructing volume collecting_surface_114
+GeoSolidFactory: Constructing volume collecting_surface_115
+GeoSolidFactory: Constructing volume collecting_surface_116
+GeoSolidFactory: Constructing volume collecting_surface_117
+GeoSolidFactory: Constructing volume collecting_surface_118
+GeoSolidFactory: Constructing volume collecting_surface_119
+GeoSolidFactory: Constructing volume collecting_surface_12
+GeoSolidFactory: Constructing volume collecting_surface_120
+GeoSolidFactory: Constructing volume collecting_surface_121
+GeoSolidFactory: Constructing volume collecting_surface_122
+GeoSolidFactory: Constructing volume collecting_surface_123
+GeoSolidFactory: Constructing volume collecting_surface_124
+GeoSolidFactory: Constructing volume collecting_surface_125
+GeoSolidFactory: Constructing volume collecting_surface_126
+GeoSolidFactory: Constructing volume collecting_surface_127
+GeoSolidFactory: Constructing volume collecting_surface_128
+GeoSolidFactory: Constructing volume collecting_surface_129
+GeoSolidFactory: Constructing volume collecting_surface_13
+GeoSolidFactory: Constructing volume collecting_surface_130
+GeoSolidFactory: Constructing volume collecting_surface_131
+GeoSolidFactory: Constructing volume collecting_surface_132
+GeoSolidFactory: Constructing volume collecting_surface_133
+GeoSolidFactory: Constructing volume collecting_surface_134
+GeoSolidFactory: Constructing volume collecting_surface_135
+GeoSolidFactory: Constructing volume collecting_surface_136
+GeoSolidFactory: Constructing volume collecting_surface_137
+GeoSolidFactory: Constructing volume collecting_surface_138
+GeoSolidFactory: Constructing volume collecting_surface_139
+GeoSolidFactory: Constructing volume collecting_surface_14
+GeoSolidFactory: Constructing volume collecting_surface_140
+GeoSolidFactory: Constructing volume collecting_surface_141
+GeoSolidFactory: Constructing volume collecting_surface_142
+GeoSolidFactory: Constructing volume collecting_surface_143
+GeoSolidFactory: Constructing volume collecting_surface_144
+GeoSolidFactory: Constructing volume collecting_surface_145
+GeoSolidFactory: Constructing volume collecting_surface_146
+GeoSolidFactory: Constructing volume collecting_surface_147
+GeoSolidFactory: Constructing volume collecting_surface_148
+GeoSolidFactory: Constructing volume collecting_surface_149
+GeoSolidFactory: Constructing volume collecting_surface_15
+GeoSolidFactory: Constructing volume collecting_surface_150
+GeoSolidFactory: Constructing volume collecting_surface_151
+GeoSolidFactory: Constructing volume collecting_surface_152
+GeoSolidFactory: Constructing volume collecting_surface_153
+GeoSolidFactory: Constructing volume collecting_surface_154
+GeoSolidFactory: Constructing volume collecting_surface_155
+GeoSolidFactory: Constructing volume collecting_surface_156
+GeoSolidFactory: Constructing volume collecting_surface_157
+GeoSolidFactory: Constructing volume collecting_surface_158
+GeoSolidFactory: Constructing volume collecting_surface_159
+GeoSolidFactory: Constructing volume collecting_surface_16
+GeoSolidFactory: Constructing volume collecting_surface_160
+GeoSolidFactory: Constructing volume collecting_surface_161
+GeoSolidFactory: Constructing volume collecting_surface_162
+GeoSolidFactory: Constructing volume collecting_surface_163
+GeoSolidFactory: Constructing volume collecting_surface_164
+GeoSolidFactory: Constructing volume collecting_surface_165
+GeoSolidFactory: Constructing volume collecting_surface_166
+GeoSolidFactory: Constructing volume collecting_surface_167
+GeoSolidFactory: Constructing volume collecting_surface_168
+GeoSolidFactory: Constructing volume collecting_surface_169
+GeoSolidFactory: Constructing volume collecting_surface_17
+GeoSolidFactory: Constructing volume collecting_surface_170
+GeoSolidFactory: Constructing volume collecting_surface_171
+GeoSolidFactory: Constructing volume collecting_surface_172
+GeoSolidFactory: Constructing volume collecting_surface_173
+GeoSolidFactory: Constructing volume collecting_surface_174
+GeoSolidFactory: Constructing volume collecting_surface_175
+GeoSolidFactory: Constructing volume collecting_surface_176
+GeoSolidFactory: Constructing volume collecting_surface_177
+GeoSolidFactory: Constructing volume collecting_surface_178
+GeoSolidFactory: Constructing volume collecting_surface_179
+GeoSolidFactory: Constructing volume collecting_surface_18
+GeoSolidFactory: Constructing volume collecting_surface_19
+GeoSolidFactory: Constructing volume collecting_surface_2
+GeoSolidFactory: Constructing volume collecting_surface_20
+GeoSolidFactory: Constructing volume collecting_surface_21
+GeoSolidFactory: Constructing volume collecting_surface_22
+GeoSolidFactory: Constructing volume collecting_surface_23
+GeoSolidFactory: Constructing volume collecting_surface_24
+GeoSolidFactory: Constructing volume collecting_surface_25
+GeoSolidFactory: Constructing volume collecting_surface_26
+GeoSolidFactory: Constructing volume collecting_surface_27
+GeoSolidFactory: Constructing volume collecting_surface_28
+GeoSolidFactory: Constructing volume collecting_surface_29
+GeoSolidFactory: Constructing volume collecting_surface_3
+GeoSolidFactory: Constructing volume collecting_surface_30
+GeoSolidFactory: Constructing volume collecting_surface_31
+GeoSolidFactory: Constructing volume collecting_surface_32
+GeoSolidFactory: Constructing volume collecting_surface_33
+GeoSolidFactory: Constructing volume collecting_surface_34
+GeoSolidFactory: Constructing volume collecting_surface_35
+GeoSolidFactory: Constructing volume collecting_surface_36
+GeoSolidFactory: Constructing volume collecting_surface_37
+GeoSolidFactory: Constructing volume collecting_surface_38
+GeoSolidFactory: Constructing volume collecting_surface_39
+GeoSolidFactory: Constructing volume collecting_surface_4
+GeoSolidFactory: Constructing volume collecting_surface_40
+GeoSolidFactory: Constructing volume collecting_surface_41
+GeoSolidFactory: Constructing volume collecting_surface_42
+GeoSolidFactory: Constructing volume collecting_surface_43
+GeoSolidFactory: Constructing volume collecting_surface_44
+GeoSolidFactory: Constructing volume collecting_surface_45
+GeoSolidFactory: Constructing volume collecting_surface_46
+GeoSolidFactory: Constructing volume collecting_surface_47
+GeoSolidFactory: Constructing volume collecting_surface_48
+GeoSolidFactory: Constructing volume collecting_surface_49
+GeoSolidFactory: Constructing volume collecting_surface_5
+GeoSolidFactory: Constructing volume collecting_surface_50
+GeoSolidFactory: Constructing volume collecting_surface_51
+GeoSolidFactory: Constructing volume collecting_surface_52
+GeoSolidFactory: Constructing volume collecting_surface_53
+GeoSolidFactory: Constructing volume collecting_surface_54
+GeoSolidFactory: Constructing volume collecting_surface_55
+GeoSolidFactory: Constructing volume collecting_surface_56
+GeoSolidFactory: Constructing volume collecting_surface_57
+GeoSolidFactory: Constructing volume collecting_surface_58
+GeoSolidFactory: Constructing volume collecting_surface_59
+GeoSolidFactory: Constructing volume collecting_surface_6
+GeoSolidFactory: Constructing volume collecting_surface_60
+GeoSolidFactory: Constructing volume collecting_surface_61
+GeoSolidFactory: Constructing volume collecting_surface_62
+GeoSolidFactory: Constructing volume collecting_surface_63
+GeoSolidFactory: Constructing volume collecting_surface_64
+GeoSolidFactory: Constructing volume collecting_surface_65
+GeoSolidFactory: Constructing volume collecting_surface_66
+GeoSolidFactory: Constructing volume collecting_surface_67
+GeoSolidFactory: Constructing volume collecting_surface_68
+GeoSolidFactory: Constructing volume collecting_surface_69
+GeoSolidFactory: Constructing volume collecting_surface_7
+GeoSolidFactory: Constructing volume collecting_surface_70
+GeoSolidFactory: Constructing volume collecting_surface_71
+GeoSolidFactory: Constructing volume collecting_surface_72
+GeoSolidFactory: Constructing volume collecting_surface_73
+GeoSolidFactory: Constructing volume collecting_surface_74
+GeoSolidFactory: Constructing volume collecting_surface_75
+GeoSolidFactory: Constructing volume collecting_surface_76
+GeoSolidFactory: Constructing volume collecting_surface_77
+GeoSolidFactory: Constructing volume collecting_surface_78
+GeoSolidFactory: Constructing volume collecting_surface_79
+GeoSolidFactory: Constructing volume collecting_surface_8
+GeoSolidFactory: Constructing volume collecting_surface_80
+GeoSolidFactory: Constructing volume collecting_surface_81
+GeoSolidFactory: Constructing volume collecting_surface_82
+GeoSolidFactory: Constructing volume collecting_surface_83
+GeoSolidFactory: Constructing volume collecting_surface_84
+GeoSolidFactory: Constructing volume collecting_surface_85
+GeoSolidFactory: Constructing volume collecting_surface_86
+GeoSolidFactory: Constructing volume collecting_surface_87
+GeoSolidFactory: Constructing volume collecting_surface_88
+GeoSolidFactory: Constructing volume collecting_surface_89
+GeoSolidFactory: Constructing volume collecting_surface_9
+GeoSolidFactory: Constructing volume collecting_surface_90
+GeoSolidFactory: Constructing volume collecting_surface_91
+GeoSolidFactory: Constructing volume collecting_surface_92
+GeoSolidFactory: Constructing volume collecting_surface_93
+GeoSolidFactory: Constructing volume collecting_surface_94
+GeoSolidFactory: Constructing volume collecting_surface_95
+GeoSolidFactory: Constructing volume collecting_surface_96
+GeoSolidFactory: Constructing volume collecting_surface_97
+GeoSolidFactory: Constructing volume collecting_surface_98
+GeoSolidFactory: Constructing volume collecting_surface_99
+GeoSolidFactory: Constructing volume sample
+
+Warning! Found a scintillator without Re-emission spectrum (probably a scintillator without WLS)
+I will assume that for this material this spectrum is equal to the primary scintillation spectrum...
+
+Warning! Found a scintillator without LIGHT_YIELD parameter.
+I will assume that for this material this parameter is implicit in the scintillation integral...
+
+Warning! Found a scintillator without Re-emission spectrum (probably a scintillator without WLS)
+I will assume that for this material this spectrum is equal to the primary scintillation spectrum...
+
+Warning! Found a scintillator without LIGHT_YIELD parameter.
+I will assume that for this material this parameter is implicit in the scintillation integral...
+Process Name Cerenkov : Type[Electromagnetic] : SubType[21]
+Process Name Attenuation : Type[Optical] : SubType[31]
+GLG4Scint[] {
+  myLowerMassLimit=0
+}
+GLG4Scint[nucleon] {
+  myLowerMassLimit=844.445
+}
+GLG4Scint[alpha] {
+  myLowerMassLimit=3354.64
+}
+Process Name OpBoundary : Type[Optical] : SubType[32]
+Created menubar
+Created Actions pulldown menu
+Created Miscellany pulldown menu
+G4OpenGLXViewer::CreateFontLists XLoadQueryFont failed for font
+  -adobe-courier-bold-r-normal--10-100-75-75-m-60-iso8859-1
+G4OpenGLXViewer::CreateFontLists XLoadQueryFont failed for font
+  -adobe-courier-bold-r-normal--11-80-100-100-m-60-iso8859-1
+G4OpenGLXViewer::CreateFontLists XLoadQueryFont failed for font
+  -adobe-courier-bold-r-normal--12-120-75-75-m-70-iso8859-1
+G4OpenGLXViewer::CreateFontLists XLoadQueryFont failed for font
+  -adobe-courier-bold-r-normal--14-100-100-100-m-90-iso8859-1
+G4OpenGLXViewer::CreateFontLists XLoadQueryFont failed for font
+  -adobe-courier-bold-r-normal--17-120-100-100-m-100-iso8859-1
+G4OpenGLXViewer::CreateFontLists XLoadQueryFont failed for font
+  -adobe-courier-bold-r-normal--18-180-75-75-m-110-iso8859-1
+G4OpenGLXViewer::CreateFontLists XLoadQueryFont failed for font
+  -adobe-courier-bold-r-normal--20-140-100-100-m-110-iso8859-1
+G4OpenGLXViewer::CreateFontLists XLoadQueryFont failed for font
+  -adobe-courier-bold-r-normal--24-240-75-75-m-150-iso8859-1
+G4OpenGLXViewer::CreateFontLists XLoadQueryFont failed for font
+  -adobe-courier-bold-r-normal--25-180-100-100-m-150-iso8859-1
+G4OpenGLXViewer::CreateFontLists XLoadQueryFont failed for font
+  -adobe-courier-bold-r-normal--34-240-100-100-m-200-iso8859-1
+/tracking/storeTrajectory 1
+Attributes available for modeling and filtering with
+  "/vis/modeling/trajectories/create/drawByAttribute" and
+  "/vis/filtering/trajectories/create/attributeFilter" commands:
+G4TrajectoriesModel:
+  Event ID (EventID): G4int
+  Run ID (RunID): G4int
+G4Trajectory:
+  Charge (Ch): unit: e+ (G4double)
+  Track ID (ID): G4int
+  Initial kinetic energy (IKE): G4BestUnit (G4double)
+  Initial momentum magnitude (IMag): G4BestUnit (G4double)
+  Initial momentum (IMom): G4BestUnit (G4ThreeVector)
+  No. of points (NTP): G4int
+  PDG Encoding (PDG): G4int
+  Parent ID (PID): G4int
+  Particle Name (PN): G4String
+G4TrajectoryPoint:
+  Position (Pos): G4BestUnit (G4ThreeVector)
+WARNING: Trajectory storing has been requested.  This action may be
+  reversed with "/tracking/storeTrajectory 0".
+WARNING: The vis manager will keep up to 100 events.
+  This may use a lot of memory.
+  It may be changed with, e.g., "/vis/scene/endOfEventAction accumulate 10".
+WARNING: Viewpoint direction is very close to the up vector direction.
+  Consider setting the up vector to obtain definable behaviour.
+WARNING: Viewpoint direction is very close to the up vector direction.
+  Consider setting the up vector to obtain definable behaviour.
+WARNING: Viewpoint direction is very close to the up vector direction.
+  Consider setting the up vector to obtain definable behaviour.
+WARNING: Viewpoint direction is very close to the up vector direction.
+  Consider setting the up vector to obtain definable behaviour.
+WARNING: Viewpoint direction is very close to the up vector direction.
+  Consider setting the up vector to obtain definable behaviour.
+WARNING: Viewpoint direction is very close to the up vector direction.
+  Consider setting the up vector to obtain definable behaviour.
+WARNING: Viewpoint direction is very close to the up vector direction.
+  Consider setting the up vector to obtain definable behaviour.
+------------------------------------------
+You have entered a viewer secondary X event loop.
+Quit it with an 'Escape' viewer button

@@ -16,6 +16,6 @@
 
 /generator/add combo gun:point
 /generator/vtx/set opticalphoton  0  1  0 0.000003
-/generator/pos/set 0 -3 0
+/generator/pos/set 0 -127 0
 
 /run/beamOn 500000
